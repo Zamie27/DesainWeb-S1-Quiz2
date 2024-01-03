@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz 2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/quiz.css" />
+  </head>
+  <body>
+    <div class="container bg-body-secondary rounded px-5">
+      <div class="header my-5 pt-4">
+        <img
+          src="img/icon.png"
+          alt="kuukok"
+          class="icon rounded mx-auto d-block"
+        />
+        <h1 class="text-center mt-4">Checkout Form</h1>
+        <p class="text-center fs-4 fw-light">
+          Below is an example form built entierly with Bootstrap's form contols.
+          Each required form group has a validation state that can be triggered
+          by attempting to submit the form without completing it.
+        </p>
+      </div>
+      <div class="payment row align-items-start my-5">
+        <!-- Biling address Start -->
+        <div class="billing col-md-8">
+          <h3>Billing address</h3>
+          <div class="name row align-items-start my-3">
+            <div class="first col-md-6">
+              <label for="name" class="form-label">First name</label>
+              <input type="name" id="firstname" class="form-control" />
+            </div>
+            <div class="last col-md-6">
+              <label for="name" class="form-label">Last name</label>
+              <input type="name" id="firstname" class="form-control" />
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Username"
+              aria-label="Username"
+            />
+          </div>
+          <div class="email mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Email <span class="fw-light">(Optional)</span></label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="you@example.com"
+            />
+          </div>
+          <div class="address mb-3">
+            <label for="name" class="form-label">Address</label>
+            <input
+              type="address"
+              id="address"
+              class="form-control"
+              placeholder="1234 Main St"
+            />
+          </div>
+          <div class="address2 mb-3">
+            <label for="name" class="form-label"
+              >Address 2 <span class="fw-light">(Optional)</span></label
+            >
+            <input
+              type="address"
+              id="address"
+              class="form-control"
+              placeholder="Appartment or suite"
+            />
+          </div>
+          <div class="row align-items-start mb-3">
+            <div class="col-md-5">
+              <label for="name" class="form-label">Country</label>
+              <select id="Select" class="form-select">
+                <option>Choose...</option>
+                <option>Indonesia</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="name" class="form-label">State</label>
+              <select id="Select" class="form-select">
+                <option>Choose...</option>
+                <option>Bandung</option>
+                <option>Bogor</option>
+                <option>Ciamis</option>
+                <option>Cirebon</option>
+                <option>Jakarta</option>
+                <option>Subang</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="name" class="form-label">Zip</label>
+              <input type="address" id="address" class="form-control" />
+            </div>
+          </div>
+
+          <div class="checkbox align-items-start mb-3">
+            <hr />
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Shipping address is the same as my billing address
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Save this information for next time
+              </label>
+            </div>
+            <hr />
+          </div>
+
+          <!-- Biling address End -->
+
+          <!-- Payment Start -->
+          <div class="Payment align-items-start mb-3">
+            <h3>Payment</h3>
+            <div class="payment-methode">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                  checked
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Credit card
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Debit card
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault3">
+                  PayPal
+                </label>
+              </div>
+            </div>
+            <div class="payment-information row align-items-start">
+              <div class="first col-md-6">
+                <label for="card-name" class="form-label">Name on card</label>
+                <input type="name" id="firstname" class="form-control" />
+                <div class="form-text" id="basic-addon4">
+                  Full name as displayed on card
+                </div>
+              </div>
+              <div class="last col-md-6">
+                <label for="card-number" class="form-label"
+                  >Credit card number</label
+                >
+                <input type="number" id="firstname" class="form-control" />
+              </div>
+            </div>
+            <div class="card-information row align-items-start">
+              <div class="last col-md-3">
+                <label for="card-number" class="form-label">Expiration</label>
+                <input type="number" id="firstname" class="form-control" />
+              </div>
+              <div class="last col-md-3">
+                <label for="card-number" class="form-label">CVV</label>
+                <input type="number" id="firstname" class="form-control" />
+              </div>
+            </div>
+            <hr />
+          </div>
+          <div class="d-grid py-4">
+            <button class="btn btn-primary btn-lg" type="submit">
+              Continue to checkout
+            </button>
+          </div>
+          <!-- Payment End -->
+        </div>
+
+        <div class="cart col-md-4">
+          <div
+            class="header-cart d-flex justify-content-between align-items-start"
+          >
+            <h3 class="text-primary">Your cart</h3>
+            <span class="badge bg-primary rounded-pill fs-5">3</span>
+          </div>
+
+          <ul class="list-group my-3">
+            <li class="list-group-item fw-bold d-flex justify-content-between">
+              <div class="col-md-10">
+                Product name <br /><span class="fw-light"
+                  >Brief description</span
+                >
+              </div>
+              <div class="col-md-2 fw-normal text-end">$12</div>
+            </li>
+            <li class="list-group-item fw-bold d-flex justify-content-between">
+              <div class="col-md-10">
+                Second name <br /><span class="fw-light"
+                  >Brief description</span
+                >
+              </div>
+              <div class="col-md-2 fw-normal text-end">$8</div>
+            </li>
+            <li class="list-group-item fw-bold d-flex justify-content-between">
+              <div class="col-md-10">
+                Third name <br /><span class="fw-light">Brief description</span>
+              </div>
+              <div class="col-md-2 fw-normal text-end">$5</div>
+            </li>
+            <li
+              class="list-group-item fw-bold text-success bg-body-secondary d-flex justify-content-between"
+            >
+              <div class="col-md-10">
+                Promo code <br /><span class="fw-normal">EXAMPLECODE</span>
+              </div>
+              <div class="col-md-2 fw-normal text-end">-$5</div>
+            </li>
+            <li class="list-group-item fw-bold d-flex justify-content-between">
+              <div class="col-md-10 fw-normal">Total (USD)</div>
+              <div class="col-md-2 text-end">$20</div>
+            </li>
+          </ul>
+          <ul class="list-group my-3">
+            <li class="list-group-item fw-bold d-flex justify-content-between">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Promo code"
+                  aria-label="Promo code"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-outline-secondary bg-secondary text-white"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Redeem
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+<!-- Muhammad Ridho Al Zamzami | D1A230109 -->
